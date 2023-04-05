@@ -1,0 +1,9 @@
+{
+    "tags": [],
+    "name": "Custom Performance Monitor - R",
+    "description": "Example of a custom performance monitor in R",
+    "modelCategory": "MODEL_MONITORING_MODEL",
+    "defaultAssociationRole": "PERFORMANCE_MODEL",
+    "frequentlyUsed": false,
+    "custom" : {}
+}
