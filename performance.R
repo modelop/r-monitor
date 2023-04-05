@@ -1,7 +1,6 @@
 # import libraries
 library(tidymodels)
 library(readr)
-library(jsonlite)
 
 # modelop.init
 begin <- function() {
