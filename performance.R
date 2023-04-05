@@ -5,7 +5,7 @@ library(jsonlite)
 
 # modelop.init
 begin <- function() {
-    # enter schema extraction here
+    # run any steps for when the monitor is loaded on the ModelOp runtime
 }
 
 # modelop.metrics
