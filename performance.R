@@ -15,5 +15,5 @@ metrics <- function(data) {
     output <- get_metrics(data = df, truth = as.factor(label_value), estimate = as.factor(score))
     mtr <- paste("PerformanceMetrics: ", toString(output))
     print(mtr)
-    emit(as.character(toJSON(mtr)))
+    emit(toJSON(mtr))
 }
