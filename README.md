@@ -1,5 +1,5 @@
 # Custom R-monitor example - Performance Monitor for Classification Models
-This ModelOp Center monitor computes classification metrics such as **AUC**, **Accuracy**, **Precision**, **Recall**, and **F1_score**.
+This ModelOp Center monitor computes classification metrics such as **Accuracy**, **Sensitivity**, **Specificity**, and **Precision**.
 
 
 ## Assumptions & Requirements
