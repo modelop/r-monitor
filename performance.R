@@ -1,6 +1,7 @@
 # import libraries
 library(tidymodels)
 library(readr)
+library(jsonlite)
 
 # modelop.init
 begin <- function() {
@@ -11,6 +12,8 @@ begin <- function() {
 metrics <- function(data) {
     df <- data.frame(data)
     get_metrics <- metric_set(f_meas, accuracy, sensitivity, specificity, precision)
-    output <- list(get_metrics(data = df, truth = as.factor(label_value), estimate = as.factor(score)))
-    emit(output)
+    output <- get_metrics(data = df, truth = as.factor(label_value), estimate = as.factor(score))
+    mtr <- paste("PerformanceMetrics: ", toString(output))
+    print(mtr)
+    emit(as.character(toJSON(mtr))
 }
