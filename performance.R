@@ -1,6 +1,6 @@
 # import libraries
-library(tidymodels)
-library(readr)
+# library(tidymodels)
+# library(readr)
 
 # modelop.init
 begin <- function() {
@@ -10,8 +10,5 @@ begin <- function() {
 # modelop.metrics
 metrics <- function(data) {
     df <- data.frame(data)
-    get_metrics <- metric_set(f_meas, accuracy, sensitivity, specificity, precision)
-    output <- get_metrics(data = df, truth = as.factor(label_value), estimate = as.factor(score))
-    mtr <- list(PerformanceMetrics=output)
-    emit(mtr)
+    emit(nrow(df))
 }
